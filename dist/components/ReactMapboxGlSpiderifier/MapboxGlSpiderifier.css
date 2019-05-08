@@ -1,0 +1,80 @@
+.spidered-marker {
+  z-index: 0;
+  width: 1px;
+  height: 1px;
+  overflow: display;
+  will-change: transform;
+  position: absolute;
+}
+
+.spidered-marker:hover {
+  z-index: 0;
+  cursor: pointer;
+}
+
+.spidered-marker .icon-div {
+  z-index: 0;
+  position: relative;
+}
+
+.spidered-marker .line-div {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: #878787;
+  opacity: 0.45;
+  transform-origin: bottom;
+  height: 0;
+  pointer-events: none;
+}
+
+.spidered-marker .line-div.empty {
+  z-index: 0;
+  display: none;
+}
+
+.spidered-marker:hover .line-div {
+  z-index: 0;
+  background-color: red;
+}
+
+/* Animations specific styles */
+
+.spidered-marker.animate {
+  z-index: 0;
+  -webkit-transition: margin 0.15s linear;
+  -moz-transition: margin 0.15s linear;
+  -ms-transition: margin 0.15s linear;
+  -o-transition: margin 0.15s linear;
+  transition: margin 0.15s linear;
+}
+
+.spidered-marker.initial,
+.spidered-marker.exit {
+  z-index: 0;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  height: 0;
+}
+
+.spidered-marker.animate .line-div {
+  z-index: 0;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  -webkit-transition-delay: inherit;
+  -moz-transition-delay: inherit;
+  -ms-transition-delay: inherit;
+  -o-transition-delay: inherit;
+  transition-delay: inherit;
+}
+
+.spidered-marker.animate.initial .line-div,
+.spidered-marker.animate.exit .line-div {
+  z-index: 0;
+  height: 0 !important;
+}
