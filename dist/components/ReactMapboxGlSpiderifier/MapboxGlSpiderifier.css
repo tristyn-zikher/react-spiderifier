@@ -22,9 +22,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 2px;
+  width: 4px;
   background-color: #878787;
-  opacity: 0.45;
+  opacity: 0.65;
   transform-origin: bottom;
   height: 0;
   pointer-events: none;
@@ -37,7 +37,7 @@
 
 .spidered-marker:hover .line-div {
   z-index: 0;
-  background-color: red;
+  background-color: #D0DF00;
 }
 
 /* Animations specific styles */
