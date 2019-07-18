@@ -75,6 +75,7 @@
 
 .spidered-marker.animate.initial .line-div,
 .spidered-marker.animate.exit .line-div {
+  position: relative;
   z-index: 0;
   height: 0 !important;
 }
