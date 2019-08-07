@@ -22,7 +22,6 @@
   background-color: #343434;
   opacity: 0.45;
   transform-origin: bottom;
-  z-index: 0;
   height: 0;
   pointer-events: none;
 }
