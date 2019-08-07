@@ -102,11 +102,7 @@ function (_Component) {
         legLength = legLength + TwoPi * spiralLengthFactor / angle;
         return _objectSpread({}, _this3._getSpiderPosition(props, legLength, angle), {
           index: index,
-          transitionDelay: _this3._getTransitionDelay(props, index),
-          style: {
-            zIndex: 99999999,
-            position: 'absolute'
-          }
+          transitionDelay: _this3._getTransitionDelay(props, index)
         });
       });
     }
