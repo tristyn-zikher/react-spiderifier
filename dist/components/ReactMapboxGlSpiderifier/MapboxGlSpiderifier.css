@@ -4,7 +4,6 @@
   overflow: display;
   will-change: transform;
   position: absolute;
-  z-index: 1;
 }
 
 .spidered-marker:hover {
@@ -13,7 +12,6 @@
 
 .spidered-marker .icon-div {
   position: relative;
-  z-index: 1;
 }
 
 .spidered-marker .line-div {
