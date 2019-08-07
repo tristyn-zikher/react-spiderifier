@@ -38,8 +38,6 @@
 /* Animations specific styles */
 
 .spidered-marker.animate {
-  position: absolute;
-  z-index: 5;
   -webkit-transition: margin 0.15s linear;
   -moz-transition: margin 0.15s linear;
   -ms-transition: margin 0.15s linear;
