@@ -132,6 +132,7 @@ function (_Component) {
       }
 
       var coordinates = this.props.coordinates;
+      var showLine = this.props.showLine
       var eventHanders = extractEventHandlers(this.props);
       return this._getNotNullChildren().map(function (child, index) {
         var params = spiderParams[index];
@@ -141,6 +142,7 @@ function (_Component) {
           return React.createElement(SpiderifierElement, Object.assign({
             key: index,
             coordinates: coordinates,
+            showLine: showLine,
             legStyles: legStyles
           }, params, eventHanders), child);
         }
