@@ -104,7 +104,7 @@ function (_Component) {
           index: index,
           transitionDelay: _this3._getTransitionDelay(props, index),
           style: {
-            zIndex: ( (index >= 5) ? (99940 + (index - 5)) : (99940 + index) )
+            zIndex: ( (index % 2 === 0) ? (99940 + index) : (99940 - index) )
           }
         });
       });
