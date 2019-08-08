@@ -107,11 +107,17 @@ function (_MarkerLayer) {
     key: "getContent",
     value: function getContent(props) {
       var shouldRenderLeg = props.shouldRenderLeg;
+      var shouldShowLine = props.shouldShowLine;
+      let styles = this._getLegStyles(props);
+      styles.zIndex="1"
+      if (!shouldShowLine) {
+        styles.visibility = 'hidden';
+      }
       return React.createElement("div", null, React.createElement("div", {
         className: "icon-div"
       }, this._getDecorateChildren(props)), shouldRenderLeg && React.createElement("div", {
         className: "line-div",
-        style: this._getLegStyles(props)
+        style: styles
       }));
     }
   }, {
