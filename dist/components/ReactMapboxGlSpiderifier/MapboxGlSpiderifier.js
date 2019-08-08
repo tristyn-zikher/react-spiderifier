@@ -75,7 +75,7 @@ function (_Component) {
         return null;
       }
 
-      var shouldRenderLeg = showingLegs;
+      var shouldRenderLeg = count > 1 || showingLegs;
       var markersProps = count >= circleSpiralSwitchover ? this._generateSpiralParams(props) : this._generateCircleParams(props);
       return markersProps.map(function (markerProp) {
         return _objectSpread({}, markerProp, {
